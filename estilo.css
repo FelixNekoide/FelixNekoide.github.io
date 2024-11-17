@@ -1,0 +1,124 @@
+:root {
+    --ancho: 35%;
+    --padding: 10px;
+    --color: rgb(105, 105, 105);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(248, 17, 17);
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    color: rgb(248, 17, 17);
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cdc9e610-a8a1-4f68-8666-cda4199a8157/dfxmh0z-b2b52431-aec8-4415-a7db-e1f50195cbe0.png/v1/fill/w_1280,h_720,q_80,strp/maki_zenin___jujutsu_kaisen_by_nexxo17_dfxmh0z-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvY2RjOWU2MTAtYThhMS00ZjY4LTg2NjYtY2RhNDE5OWE4MTU3XC9kZnhtaDB6LWIyYjUyNDMxLWFlYzgtNDQxNS1hN2RiLWUxZjUwMTk1Y2JlMC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Q6M92688MlfKBvHxfLWDDlX4nVZY5JvzBS2DflAaqNA");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: var(--ancho);
+    background: var(--color);
+    padding: var(--padding);
+    border-bottom: 5px solid rgb(105, 105, 105);
+}
+
+#dni {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    background: none;
+    font-size: 38px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.button button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: rgba(0, 0, 0, 0.425);
+    outline: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#dni::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 0.3;
+}
+
+
+/* RESULTADO */
+
+.resultado {
+    width: var(--ancho);
+    padding: var(--padding);
+    background: var(--color);
+}
+
+.resultado h2 {
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+}
+
+.resultado .dni,
+.nombre,
+.apellido,
+.cui {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid rgb(85, 85, 85);
+}
+
+.label {
+    width: 8%;
+    margin-top: 30px;
+}
+
+.res input {
+    width: 92%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: left;
+}
